@@ -20,10 +20,10 @@ function NavBar() {
             </Nav>
             <Nav className="mr-auto" navbar>
             <NavItem>
-                <NavLink href="/login">Log in</NavLink>
+                <NavLink className="headerButton" href="/login">Log in</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink href="/signup">Sign up</NavLink>
+                <NavLink className="headerButton" href="/signup">Sign up</NavLink>
             </NavItem>
             </Nav>
         </Navbar>
