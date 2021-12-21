@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
-import "../styles/Navbar.css";
+import "../styles/NavBar.css";
+import {
+    Navbar,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+  } from 'reactstrap';
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+function NavBar() {
 
   return (
-    <div class="navbar">
-        <div>
-            MangoBango
-        </div>
+    <div>
+        <Navbar id="navbar" color="dark" dark expand="md" fixed="top" full light>
+            <Nav className="me-auto" navbar>
+            <NavItem id="item">
+                <NavLink href="/">MangoBango</NavLink>
+            </NavItem>
+            </Nav>
+        </Navbar>
     </div>
   );
 }
 
-export default Navbar;
+export default NavBar;

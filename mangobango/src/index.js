@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './views/LandingPage';
+import LandingPage from './views/LandingPage';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter, Route, Routes
 } from "react-router-dom";
+import NavBar from './components/NavBar';
 
 ReactDOM.render(
   <React.StrictMode>
+    <NavBar/>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/" element={<LandingPage />}>
         </Route>
       </Routes>
     </BrowserRouter>
