@@ -41,7 +41,7 @@ const userSchema =  new mongoose.Schema({
     
 });
 
-//Hashing password
+// Hashing password
 userSchema.pre('save', async function(next){
     //check whether user changed the field password
     if(this.isModified('password')){
@@ -50,7 +50,7 @@ userSchema.pre('save', async function(next){
     next();
 });
 
-//generating token
+// Generating token
 userSchema.methods.generateAuthToken = async function(){
     try{
         let token = jwt.sign({_id:this._id}, process.env.TOKEN_SECRET);

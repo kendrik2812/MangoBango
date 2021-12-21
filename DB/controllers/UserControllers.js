@@ -30,14 +30,14 @@ let UserController = {
             return res.status(422).json({error: "Please fill the field properly"});
         }
 
-        //valiodate the data before a creating a user
+        // Vallidate the data before a creating a user
         const {error} = registerValidation(req.body);
         if(error) return res.status(400).send(error.details[0].message);
-        //checking if the user is already in the database
+        // check if user exists in database
         const emailExist = await UserModel.findOne({email: req.body.email});
         if(emailExist)return res.status(400).send('Email already exist');
 
-        //create a new user
+        // Create a new user
         const user = new UserModel({
             name: req.body.name,
             email: req.body.email,

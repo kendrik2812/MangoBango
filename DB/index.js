@@ -10,25 +10,28 @@ const app = express();
 dotenv.config({path:'./config.env'});
 const PORT = process.env.PORT;
 
-//calling a connection.js file to 
+// Calling a connection.js file
 require('./connection');
 app.use(express.json());
 
-//size of the downloaded images are limited
+// Size of the downloaded images are limited
 app.use(bodyParser.json({limit: "20mb", extended: true}));
 app.use(bodyParser.urlencoded({limit: "20mb", extended: true}));
 
 // Set up user route
 app.use('/api/user', userRoute); 
 
-//Routes middleware
+// Routes middleware
 app.use(cors());
 
-// Controllers for get and post requests
+// USER controller for get and post requests 
 const UserController = require('./controllers/UserControllers.js');
 
 // Get request for user to recieve information from db
 app.get("/users", UserController.all);
+app.get("/users/:username", UserController.find);
+app.get("/users/email/:email", UserController.findByEmail);
+// Post request to create user
 app.post("/users/create", UserController.create);
 
 app.listen(PORT, ()=>console.log(`Connected to the server ${PORT}`));

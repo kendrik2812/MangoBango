@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const CONNECTION_URL = process.env.DATABASE;
 
-//Creating a Connection with mangodb
+// Creating a Connection with mangodb
 mongoose.connect( CONNECTION_URL, {
     useNewUrlParser: true, 
     useUnifiedTopology: true,

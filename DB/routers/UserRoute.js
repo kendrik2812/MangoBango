@@ -58,7 +58,7 @@ router.post('/login',async (req,res)=>{
     // Check password
     const validPass = await bcrypt.compare(password, user.password);
 
-    //generate a token and stored cookie after the password match
+    // Generates a token and stored cookie after the password match
     const token = await user.generateAuthToken();
   
     res.cookie("jwtoken",token, {
