@@ -1,13 +1,26 @@
+import React from 'react';
+import { useNavigate } from "react-router-dom";
 import '../styles/LandingPage.css';
-import {
-  BrowserRouter, Route, Routes
-} from "react-router-dom";
-import Navbar from '../components/Navbar'
+import { Button } from "reactstrap"
+
 
 function LandingPage() {
+
+  const navigate = useNavigate();
+
+  const routeChange = () =>{  
+    navigate('/signup');
+  }
+
   return (
     <div>
-      Landing Page
+      <h3>
+        Save Recipes and Plan your Meals
+      </h3>
+      <h1>
+        Get Cooking!
+      </h1>
+      <button className="yellowBtn" onClick={routeChange}> Start your Cooking Journey </button>
     </div>
   );
 }
