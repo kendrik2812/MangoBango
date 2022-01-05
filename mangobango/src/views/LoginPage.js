@@ -1,12 +1,12 @@
 import React from 'react';
-import './Login.css'
+import '../styles/Login.css'
 
 function Login(){
     return(
         <div class = "login-page">
+            <form>
             <h1>Welcome Back!</h1>
             <h2>No Account? Sign Up</h2>
-            <form>
                 <label>
                     <p>Username</p>
                     <input type = "text" />
