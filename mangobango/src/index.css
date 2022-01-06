@@ -1,6 +1,7 @@
 :root {
   --black: #1f2326;
   --white: #ffffff;
+  --yellow: #f9be00;
 }
 
 body {
@@ -30,11 +31,16 @@ code {
   align-items: flex-start;
   padding: 10px 36px;
   position: absolute;
-  background: #f9be00;
+  background: var(--yellow);
   border-radius: 20px;
   color: #1f2326;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
   text-align: center;
+}
+
+.yellowBtn:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--black);
 }

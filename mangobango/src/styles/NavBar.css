@@ -1,15 +1,58 @@
 .headerButton {
-  background-color: #343434;
-  padding: 3px 10px;
+  background-color: transparent;
   margin: 0px 10px 0px 10px;
   border-radius: 50px;
   font-size: small;
 }
 
-.navbar {
-  background-image: url("../images/webb-dark.png");
+.headerButton > li {
+  display: block;
+  float: left;
+  padding: 5px 15px;
+  margin: 0px 5px;
+  color: white;
+
+  background: #343434;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
 }
 
-Nav {
-  background: red;
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+a:hover,
+a::selection {
+  color: var(--yellow);
+  background-color: transparent;
+}
+
+.navbar {
+  background-image: url("../images/webb-dark.png");
+  list-style-type: none;
+}
+
+.navbar > * {
+  background-color: transparent;
+}
+
+.companyName {
+  font-size: large;
+  margin: 0px 5px;
+}
+
+.companyName > * {
+  margin: 0px 10px 0 0;
+}
+
+.companyName > img {
+  transform: translateY(-2px);
+}
+
+img {
+  width: 25px;
+  background: transparent;
 }
