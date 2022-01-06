@@ -1,5 +1,5 @@
 body{
-    background-image: url(""); /*add background image in figma*/
+    /*background-image: url("spoonsbkg.jfif");*/
     background-color: #e5e5e5;
 }
 
@@ -19,9 +19,9 @@ form{
 }
 
 form h1{
-    font-size: 48px;
+    font-size: 32px;
     font-family: 'Roboto Slab', serif;
-    text-align: center;
+    text-align: left;
     color: #ffffff;
     outline: none;
     border: none;
@@ -29,9 +29,9 @@ form h1{
 }
 
 form h2{
-    font-size: 18px;
+    font-size: 12px;
     font-family: 'Roboto Slab', serif;
-    text-align: left;
+    text-align: start;
     color: #ffffff;
     outline: none;
     border: none;
