@@ -1,18 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './views/LandingPage';
+import LandingPage from './views/LandingPage';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter, Route, Routes
 } from "react-router-dom";
+import NavBar from './components/NavBar';
+import LoginPage from './views/LoginPage';
+import RegisterPage from './views/RegisterPage';
 
 ReactDOM.render(
   <React.StrictMode>
+    <NavBar/>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
-        </Route>
+        <Route path="/" element={<LandingPage />}></Route>
+        <Route path="/signup" element={<RegisterPage />}></Route>
+        <Route path="/login" element={<LoginPage />}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
