@@ -5,3 +5,11 @@
   border-radius: 50px;
   font-size: small;
 }
+
+.navbar {
+  background-image: url("../images/webb-dark.png");
+}
+
+Nav {
+  background: red;
+}

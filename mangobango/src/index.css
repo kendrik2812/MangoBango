@@ -1,3 +1,8 @@
+:root {
+  --black: #1f2326;
+  --white: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -25,12 +30,11 @@ code {
   align-items: flex-start;
   padding: 10px 36px;
   position: absolute;
-  width: 338px;
-  height: 46px;
-  left: 81px;
-  top: 309px;
   background: #f9be00;
   border-radius: 20px;
   color: #1f2326;
-  font-weight: 900;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
 }

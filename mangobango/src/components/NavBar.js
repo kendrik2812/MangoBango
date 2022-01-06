@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 import "../styles/NavBar.css";
-// import {
-//     Navbar,
-//     Nav,
-//     NavItem,
-//     NavLink,
-//   } from 'reactstrap';
 import { Navbar, Nav, NavLink, NavItem, NavbarBrand} from "reactstrap"
 
 function NavBar() {
@@ -15,7 +9,7 @@ function NavBar() {
         <Navbar id="navbar" color="dark" dark expand="md">
             <Nav className="me-auto" navbar>
             <NavItem>
-                <NavbarBrand href="/" >MangoBango</NavbarBrand>
+                <NavbarBrand href="/">MangoBango</NavbarBrand>
             </NavItem>
             </Nav>
             <Nav className="mr-auto" navbar>

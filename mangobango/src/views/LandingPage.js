@@ -14,13 +14,15 @@ function LandingPage() {
 
   return (
     <div>
-      <h3>
-        Save Recipes and Plan your Meals
-      </h3>
-      <h1>
-        Get Cooking!
-      </h1>
-      <button className="yellowBtn" onClick={routeChange}> Start your Cooking Journey </button>
+      <div className="headline">
+        <h3>
+          Save Recipes and Plan your Meals
+        </h3>
+        <h1>
+          Get Cooking!
+        </h1>
+        <button className="yellowBtn" onClick={routeChange}> Start your Cooking Journey </button>
+      </div>
     </div>
   );
 }
