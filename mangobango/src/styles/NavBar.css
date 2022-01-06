@@ -1,0 +1,15 @@
+.headerButton {
+  background-color: #343434;
+  padding: 3px 10px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 50px;
+  font-size: small;
+}
+
+.navbar {
+  background-image: url("../images/webb-dark.png");
+}
+
+Nav {
+  background: red;
+}

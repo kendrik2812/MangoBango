@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/Login.css'
+import '../styles/LoginPage.css'
 
-function Login(){
+function LoginPage(){
     return(
         <div class = "login-page">
             <form>
