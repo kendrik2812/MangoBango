@@ -9,12 +9,15 @@ function LoginPage(){
             <h2>No Account? Sign Up</h2>
                 <label>
                     <p>Username</p>
-                    <input type = "text" />
+                    <input type = "text" placeholder='Username'/>
                 </label>
                 <label>
                     <p>Password</p>
-                    <input type = "password" />
+                    <input type = "password" placeholder='Password' />
                 </label>
+                <div>
+                    <button type= "submit">Login</button>
+                </div>
             </form>
         </div>
     );
